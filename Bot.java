@@ -225,7 +225,7 @@ public class Bot extends TelegramLongPollingBot {
 
     private String getResponseFromOpenAI(String prompt) {
         String openAiUrl = "https://api.openai.com/v1/engines/davinci/completions";
-        String apiKey = "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";
+        String apiKey = "YOUR_OPENAI_API_KEY";
 
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             HttpPost request = new HttpPost(openAiUrl);
